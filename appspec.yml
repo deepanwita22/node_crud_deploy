@@ -1,18 +1,14 @@
 version: 0.0
 os: linux
 files:
-- source: /
-  destination: /home/ec2-user
+  - source: /
+    destination: /var/api/
 hooks:
   AfterInstall:
-  - location: fix_previleges.sh
-    timeout: 300
-    runas: root
+    - location: scripts/npm-install.sh
+      runas: root
+      timeout: 300
   ApplicationStart:
-  - location: start_server.sh
-    timeout: 300
-    runas: root
-  ApplicationStop:
-  - location: stop_server.sh
-    timeout: 300
-    runas: root
+    - location: scripts/npm-start.sh
+      runas: root
+      timeout: 60
