@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /var/api
+cd /home/ec2-user/node_crud
 npm start
