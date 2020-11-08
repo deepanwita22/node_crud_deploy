@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const url = 'mongodb://localhost/AlienDB'
+const url = 'mongodb://deepanwita:dm221999@docdb-2020-11-08-14-00-25.cluster-cu26gd48t4mr.us-east-2.docdb.amazonaws.com:27017/?ssl=true&ssl_ca_certs=rds-combined-ca-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false'
 
 const app = express()
 
